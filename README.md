@@ -23,7 +23,9 @@ Principle introduction  The core node in the twist_mux function package is twist
 The input on the left is multiple topics of type geometry_msgs::Twist. After the selection of twist_mux, the only topic of geometry_msgs::Twist is output. The topic entered below is the lock topic of the user's dynamic configuration selection mechanism. The message type of the topic is Bool. Just like the lock, there are only two states: open and closed. The concept of lock here can be understood as: by restricting input sources with different priorities, the effect of controlling the output is achieved.      
 
 
-Install  Download the source code on github: https://github.com/yujinrobot/yujin_ocs      
+Install  Download the source code on github: https://github.com/paridisankar/Command-multiplexer.git      
 
 
 File analysis in param  example.yaml file
+
+launch file analysis  cmd_vel_mux.launch, which uses nodelet_manager to load yocs_cmd_vel_mux/CmdVelMuxNodelet
